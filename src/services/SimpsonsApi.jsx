@@ -5,6 +5,6 @@ export const fetchQuote = async () => {
   return {
     name: quote.character,
     image: quote.image,
-    quotes: quote.quote,
+    quote: quote.quote,
   };
 };
