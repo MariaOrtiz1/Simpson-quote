@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Load from '../components/quote/Load';
-import Quote from '../components/quote/Quote';
+import Load from '../components/app/quote/Load';
+import Quote from '../components/app/quote/Quote';
 import { fetchQuote } from '../services/SimpsonsApi';
 
 const SimpsonsQuote = () => {
@@ -24,7 +24,10 @@ const SimpsonsQuote = () => {
         <h1>Loading now!</h1>
       ) : (
         quote && (
-          <Quote name={quote.name} image={quote.image} quote={quote.quote} />
+          <Quote 
+            name={quote.name} 
+            image={quote.image} 
+            quote={quote.quote} />
         )
       )}
     </>
